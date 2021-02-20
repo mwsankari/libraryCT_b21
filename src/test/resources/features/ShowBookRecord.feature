@@ -6,11 +6,12 @@ Feature:  As a librarian, I should be able to see book records on user page
     When User click on "Users" link
     Then Show record default value should be 10
 
-
-  Scenario:  Show records for count options
+@we
+ Scenario Outline:  Show records for count options
     Given User logged in as librarian
     When User click on "Users" link
     Then Show records for "<count>" option
+    Examples:
       | count |
       | 5     |
       | 10    |
