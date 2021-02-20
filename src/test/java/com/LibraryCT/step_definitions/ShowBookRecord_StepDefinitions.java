@@ -1,13 +1,15 @@
 package com.LibraryCT.step_definitions;
 
+import com.LibraryCT.pages.LoginPage;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class ShowBookRecord_StepDefinitions {
+    LoginPage loginPage=new LoginPage();
     @Given("User logged in as librarian")
     public void user_logged_in_as_librarian() {
-
+loginPage.loginToLibraryApp_Librarian();
     }
 
 
