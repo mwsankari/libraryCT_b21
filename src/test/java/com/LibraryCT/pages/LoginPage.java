@@ -26,14 +26,14 @@ public class LoginPage {
     public WebElement loginButton;
 
     public void loginToLibraryApp_Librarian(){
-
+        Driver.getDriver().get(ConfigurationReader.getProperty("url"));
         usernameBox.sendKeys(ConfigurationReader.getProperty("usernameL20"));
         passwordBox.sendKeys(ConfigurationReader.getProperty("passwordL20"));
         loginButton.click();
 
     }
     public void loginToLibraryApp_Student(){
-
+        Driver.getDriver().get(ConfigurationReader.getProperty("url"));
         usernameBox.sendKeys(ConfigurationReader.getProperty("usernameS110"));
         passwordBox.sendKeys(ConfigurationReader.getProperty("passwordS110"));
         loginButton.click();
