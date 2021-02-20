@@ -9,7 +9,7 @@ public class MainPage {
     public MainPage() {
         PageFactory.initElements(Driver.getDriver(), this);
     }
-    @FindBy(linkText = "Users")
+    @FindBy(xpath = "//a[@href='#users']")
     public WebElement usersPageLink;
     @FindBy(linkText = "Books")
     public WebElement booksPageLink;
