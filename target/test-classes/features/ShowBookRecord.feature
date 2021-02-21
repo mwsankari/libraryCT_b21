@@ -10,9 +10,9 @@ Feature:  As a librarian, I should be able to see book records on user page
  Scenario Outline:  Show records for count options
     Given User logged in as librarian
     When User click on "Users" link
-    Then Show records for "<count>" option
-    Examples:
-      | count |
+    Then Show records for "<count>" option see "<number>" of books
+Examples:
+      |count|
       | 5     |
       | 10    |
       | 15    |
