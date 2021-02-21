@@ -2,6 +2,7 @@ package com.LibraryCT.step_definitions;
 
 import com.LibraryCT.pages.BookCategoriesPage;
 import com.LibraryCT.pages.LoginPage;
+import com.LibraryCT.utilities.BrowserUtils;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -21,29 +22,31 @@ public class BookCategories_StepDefinitions {
     public void user_logged_in_as_a_student(){
 
         loginPage.loginToLibraryApp_Student();
+        BrowserUtils.sleep(3);
     }
 
 
-    @When("User click all book categories")
-    public void user_click_all_book_categories() {
-
-        bookCategoriesPage.searchCategoriesBox.click();
-
-
-    }
     @Then("User able to see below list of books categories")
     public void user_able_to_see_below_list_of_books_categories(List<String> ExpectedList) {
+        Select select=new Select(bookCategoriesPage.searchCategoriesBox);
+        List<WebElement> bookWebElement=select.getOptions();
+        List<String> bookString=new ArrayList<>();
+        for (WebElement each : bookWebElement) {
+            bookString.add(each.getText());
 
-        Select select = new Select(bookCategoriesPage.dropdownCategories);
-        List<WebElement> book=select.getOptions();
-
-        List<String> bookstr = new ArrayList<>();
-
-        for(WebElement each : book){
-            bookstr.add(each.getText());
         }
+        //Assertion will compare the size of the lists first, if it is not equal it will fail the test.
+        //If sizes are equal, than it will compare each element in the list
+        Assert.assertTrue(ExpectedList.equals(bookString));
 
-        Assert.assertTrue(ExpectedList.equals(bookstr));
+        //bookCategoriesPage.searchCategoriesBox.click();
+       // List<String> actualList=new ArrayList<>();
+
+       // for(WebElement each : bookCategoriesPage.dropdownCategories){
+        //    actualList.add(each.getText());
+
+
+        //Assert.assertTrue(ExpectedList.equals(actualList));
     }
 
 }

@@ -1,86 +1,223 @@
 [
   {
-    "line": 2,
+    "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-02-21T16:32:38.705Z",
-        "line": 4,
-        "name": "user as logout successfully",
+        "start_timestamp": "2021-02-21T20:50:57.567Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.LibraryCT.step_definitions.Hooks.setUpScenario()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Student able to search  books by list of categories",
         "description": "",
-        "id": "library-app-logout-feature;user-as-logout-successfully",
+        "id": "as-a-student-i-should-be-able-to;student-able-to-search--books-by-list-of-categories",
+        "after": [
+          {
+            "result": {
+              "duration": 1007000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.LibraryCT.step_definitions.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 4432000000,
+              "duration": 11160000000,
               "status": "passed"
             },
-            "line": 5,
-            "name": "user should login successfully",
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.LibraryCT.step_definitions.Hooks.runBeforeSteps()"
+                }
+              }
+            ],
+            "line": 6,
+            "name": "User logged in as a student",
             "match": {
-              "location": "com.LibraryCT.step_definitions.Logout_StepDefinitions.user_should_login_successfully()"
+              "location": "com.LibraryCT.step_definitions.BookCategories_StepDefinitions.user_logged_in_as_a_student()"
             },
+            "after": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.LibraryCT.step_definitions.Hooks.runsAfterSteps()"
+                }
+              }
+            ],
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 1019000000,
+              "duration": 322000000,
               "status": "passed"
             },
-            "line": 6,
-            "name": "user should see main page",
-            "match": {
-              "location": "com.LibraryCT.step_definitions.Logout_StepDefinitions.user_should_see_main_page()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 2357000000,
-              "status": "passed"
-            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.LibraryCT.step_definitions.Hooks.runBeforeSteps()"
+                }
+              }
+            ],
             "line": 7,
-            "name": "user logs out from application",
+            "name": "User able to see below list of books categories",
             "match": {
-              "location": "com.LibraryCT.step_definitions.Logout_StepDefinitions.user_logs_out_from_application()"
+              "location": "com.LibraryCT.step_definitions.BookCategories_StepDefinitions.user_able_to_see_below_list_of_books_categories(java.util.List\u003cjava.lang.String\u003e)"
             },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.LibraryCT.step_definitions.Hooks.runsAfterSteps()"
+                }
+              }
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "ALL"
+                ]
+              },
+              {
+                "cells": [
+                  "Action and Adventure"
+                ]
+              },
+              {
+                "cells": [
+                  "Anthology"
+                ]
+              },
+              {
+                "cells": [
+                  "Classic"
+                ]
+              },
+              {
+                "cells": [
+                  "Comic and Graphic Novel"
+                ]
+              },
+              {
+                "cells": [
+                  "Crime and Detective"
+                ]
+              },
+              {
+                "cells": [
+                  "Drama"
+                ]
+              },
+              {
+                "cells": [
+                  "Fable"
+                ]
+              },
+              {
+                "cells": [
+                  "Fairy Tale"
+                ]
+              },
+              {
+                "cells": [
+                  "Fan-Fiction"
+                ]
+              },
+              {
+                "cells": [
+                  "Fantasy"
+                ]
+              },
+              {
+                "cells": [
+                  "Historical Fiction"
+                ]
+              },
+              {
+                "cells": [
+                  "Horror"
+                ]
+              },
+              {
+                "cells": [
+                  "Science Fiction"
+                ]
+              },
+              {
+                "cells": [
+                  "Biography/Autobiography"
+                ]
+              },
+              {
+                "cells": [
+                  "Humor"
+                ]
+              },
+              {
+                "cells": [
+                  "Romance"
+                ]
+              },
+              {
+                "cells": [
+                  "Short Story"
+                ]
+              },
+              {
+                "cells": [
+                  "Essay"
+                ]
+              },
+              {
+                "cells": [
+                  "Memoir"
+                ]
+              },
+              {
+                "cells": [
+                  "Poetry"
+                ]
+              }
+            ],
             "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 3194000000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "user should see login page",
-            "match": {
-              "location": "com.LibraryCT.step_definitions.Logout_StepDefinitions.user_should_see_login_page()"
-            },
-            "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@logout"
+            "name": "@ll"
           }
         ]
       }
     ],
-    "name": "Library app logout feature",
-    "description": "",
-    "id": "library-app-logout-feature",
+    "name": "As a student I should be able to",
+    "description": "  search books with different categories",
+    "id": "as-a-student-i-should-be-able-to",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/Logout.feature",
-    "tags": [
-      {
-        "name": "@logout",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 1
-        }
-      }
-    ]
+    "uri": "file:src/test/resources/features/BookCategories.feature",
+    "tags": []
   }
 ]
