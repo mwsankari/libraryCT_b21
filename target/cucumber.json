@@ -1,161 +1,86 @@
 [
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-02-21T18:48:48.160Z",
-        "line": 5,
-        "name": "Student able to search  books by list of categories",
+        "start_timestamp": "2021-02-21T16:32:38.705Z",
+        "line": 4,
+        "name": "user as logout successfully",
         "description": "",
-        "id": "as-a-student-i-should-be-able-to;student-able-to-search--books-by-list-of-categories",
+        "id": "library-app-logout-feature;user-as-logout-successfully",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 12664000000,
+              "duration": 4432000000,
               "status": "passed"
             },
-            "line": 6,
-            "name": "User logged in as a student",
+            "line": 5,
+            "name": "user should login successfully",
             "match": {
-              "location": "com.LibraryCT.step_definitions.BookCategories_StepDefinitions.user_logged_in_as_a_student()"
+              "location": "com.LibraryCT.step_definitions.Logout_StepDefinitions.user_should_login_successfully()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//select[@id\u003d‘book_categories’]//option\"}\n  (Session info: chrome\u003d88.0.4324.182)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027Marias-MacBook-Pro.local\u0027, ip: \u002710.0.0.147\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.13.6\u0027, java.version: \u00271.8.0_231\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.182, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: /var/folders/42/nnlghgm920j...}, goog:chromeOptions: {debuggerAddress: localhost:56438}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: c4d48f13ac28f105b1dbfb799ac209f4\n*** Element info: {Using\u003dxpath, value\u003d//select[@id\u003d‘book_categories’]//option}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\n\tat com.sun.proxy.$Proxy15.getTagName(Unknown Source)\n\tat org.openqa.selenium.support.ui.Select.\u003cinit\u003e(Select.java:45)\n\tat com.LibraryCT.step_definitions.BookCategories_StepDefinitions.user_able_to_see_below_list_of_books_categories(BookCategories_StepDefinitions.java:37)\n\tat ✽.User able to see below list of books categories(file:///Users/mariayakubova/Desktop/Intellij%20Projects/libraryCT_b21/src/test/resources/features/BookCategories.feature:7)\n",
-              "duration": 763000000,
-              "status": "failed"
+              "duration": 1019000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user should see main page",
+            "match": {
+              "location": "com.LibraryCT.step_definitions.Logout_StepDefinitions.user_should_see_main_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2357000000,
+              "status": "passed"
             },
             "line": 7,
-            "name": "User able to see below list of books categories",
+            "name": "user logs out from application",
             "match": {
-              "location": "com.LibraryCT.step_definitions.BookCategories_StepDefinitions.user_able_to_see_below_list_of_books_categories(java.util.List\u003cjava.lang.String\u003e)"
+              "location": "com.LibraryCT.step_definitions.Logout_StepDefinitions.user_logs_out_from_application()"
             },
-            "rows": [
-              {
-                "cells": [
-                  "ALL"
-                ]
-              },
-              {
-                "cells": [
-                  "Action and Adventure"
-                ]
-              },
-              {
-                "cells": [
-                  "Anthology"
-                ]
-              },
-              {
-                "cells": [
-                  "Classic"
-                ]
-              },
-              {
-                "cells": [
-                  "Comic and Graphic Novel"
-                ]
-              },
-              {
-                "cells": [
-                  "Crime and Detective"
-                ]
-              },
-              {
-                "cells": [
-                  "Drama"
-                ]
-              },
-              {
-                "cells": [
-                  "Fable"
-                ]
-              },
-              {
-                "cells": [
-                  "Fairy Tale"
-                ]
-              },
-              {
-                "cells": [
-                  "Fan-Fiction"
-                ]
-              },
-              {
-                "cells": [
-                  "Fantasy"
-                ]
-              },
-              {
-                "cells": [
-                  "Historical Fiction"
-                ]
-              },
-              {
-                "cells": [
-                  "Horror"
-                ]
-              },
-              {
-                "cells": [
-                  "Science Fiction"
-                ]
-              },
-              {
-                "cells": [
-                  "Biography/Autobiography"
-                ]
-              },
-              {
-                "cells": [
-                  "Humor"
-                ]
-              },
-              {
-                "cells": [
-                  "Romance"
-                ]
-              },
-              {
-                "cells": [
-                  "Short Story"
-                ]
-              },
-              {
-                "cells": [
-                  "Essay"
-                ]
-              },
-              {
-                "cells": [
-                  "Memoir"
-                ]
-              },
-              {
-                "cells": [
-                  "Poetry"
-                ]
-              }
-            ],
             "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3194000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user should see login page",
+            "match": {
+              "location": "com.LibraryCT.step_definitions.Logout_StepDefinitions.user_should_see_login_page()"
+            },
+            "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@LOL"
+            "name": "@logout"
           }
         ]
       }
     ],
-    "name": "As a student I should be able to",
-    "description": "  search books with different categories",
-    "id": "as-a-student-i-should-be-able-to",
+    "name": "Library app logout feature",
+    "description": "",
+    "id": "library-app-logout-feature",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/BookCategories.feature",
-    "tags": []
+    "uri": "file:src/test/resources/features/Logout.feature",
+    "tags": [
+      {
+        "name": "@logout",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
   }
 ]
