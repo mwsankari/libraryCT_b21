@@ -55,16 +55,46 @@ public class ShowBookRecord_StepDefinitions {
 
 
 
-    @Then("Show records for {string} option")
-    public void show_records_for_option(List<String> count ) {
-        select =new Select(usersPage.showRecordDropDown);
-        Driver.getDriver().findElement(By.xpath("//option[@value='5']")).click();
-        //List<WebElement> webElements= select.getOptions();
-        //List<String> actualText= BrowserUtils.getElementsText(webElements);
-        //Assert.assertEquals(count,actualText);
+
+
+
+    @Then("Show records for {string} option see {string} of books")
+    public void showRecordsForOptionSeeOfBooks(String arg0, String arg1) {
+        BrowserUtils.sleep(2);
+        usersPage.showRecordDropDown.click();
+        switch (arg0){
+            case "5":
+                usersPage.count5option.click();
+                break;
+            case "10":
+                usersPage.count10option.click();
+                break;
+            case "15":
+                usersPage.count15option.click();
+                break;
+            case "50":
+                usersPage.count50option.click();
+                break;
+            case "100":
+                usersPage.count100option.click();
+                break;
+            case "200":
+                usersPage.count200option.click();
+                break;
+            case "500":
+                usersPage.count500option.click();
+                break;
+
+        }
+        //Assert.assertEquals(usersPage.allRows.size(),arg1);
+        System.out.println(usersPage.allRows.size());
+        BrowserUtils.sleep(3);
+
+
+
+
 
     }
-
 
 
 }
