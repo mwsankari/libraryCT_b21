@@ -1,205 +1,108 @@
 [
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-02-22T00:32:20.344Z",
-        "before": [
-          {
-            "result": {
-              "duration": 3000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.LibraryCT.step_definitions.Hooks.setUpScenario()"
-            }
-          }
-        ],
+        "start_timestamp": "2021-02-22T23:31:36.698Z",
         "line": 5,
-        "name": "Student able to search  books by list of categories",
+        "name": "Verify that the default record is 10",
         "description": "",
-        "id": "as-a-student-i-should-be-able-to;student-able-to-search--books-by-list-of-categories",
-        "after": [
-          {
-            "result": {
-              "duration": 1007000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.LibraryCT.step_definitions.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
+        "id": "as-a-librarian--i-should-be-able-to-see-book-records-on-user-page;verify-that-the-default-record-is-10",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 9819000000,
+              "duration": 7196000000,
               "status": "passed"
             },
-            "before": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "com.LibraryCT.step_definitions.Hooks.runBeforeSteps()"
-                }
-              }
-            ],
             "line": 6,
-            "name": "User logged in as a student",
+            "name": "User logged in as librarian",
             "match": {
-              "location": "com.LibraryCT.step_definitions.BookCategories_StepDefinitions.user_logged_in_as_a_student()"
+              "location": "com.LibraryCT.step_definitions.ShowBookRecord_StepDefinitions.user_logged_in_as_librarian()"
             },
-            "after": [
-              {
-                "result": {
-                  "duration": 1000000,
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "com.LibraryCT.step_definitions.Hooks.runsAfterSteps()"
-                }
-              }
-            ],
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 552000000,
+              "duration": 77000000,
               "status": "passed"
             },
-            "before": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "com.LibraryCT.step_definitions.Hooks.runBeforeSteps()"
-                }
-              }
-            ],
             "line": 7,
-            "name": "User able to see below list of books categories",
+            "name": "User click on \"Users\" link",
             "match": {
-              "location": "com.LibraryCT.step_definitions.BookCategories_StepDefinitions.user_able_to_see_below_list_of_books_categories(java.util.List\u003cjava.lang.String\u003e)"
-            },
-            "after": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "com.LibraryCT.step_definitions.Hooks.runsAfterSteps()"
+              "arguments": [
+                {
+                  "val": "\"Users\"",
+                  "offset": 14
                 }
-              }
-            ],
+              ],
+              "location": "com.LibraryCT.step_definitions.ShowBookRecord_StepDefinitions.user_click_on_link(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2114000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Show record default value should be 10",
+            "match": {
+              "arguments": [
+                {
+                  "val": "10",
+                  "offset": 36
+                }
+              ],
+              "location": "com.LibraryCT.step_definitions.ShowBookRecord_StepDefinitions.show_record_default_value_should_be(java.lang.Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 134000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "show records should have following options:",
+            "match": {
+              "location": "com.LibraryCT.step_definitions.ShowBookRecord_StepDefinitions.showRecordsShouldHaveFollowingOptions(java.util.List\u003cjava.lang.String\u003e)"
+            },
             "rows": [
               {
                 "cells": [
-                  "ALL"
+                  "5"
                 ]
               },
               {
                 "cells": [
-                  "Action and Adventure"
+                  "10"
                 ]
               },
               {
                 "cells": [
-                  "Anthology"
+                  "15"
                 ]
               },
               {
                 "cells": [
-                  "Classic"
+                  "50"
                 ]
               },
               {
                 "cells": [
-                  "Comic and Graphic Novel"
+                  "100"
                 ]
               },
               {
                 "cells": [
-                  "Crime and Detective"
+                  "200"
                 ]
               },
               {
                 "cells": [
-                  "Drama"
-                ]
-              },
-              {
-                "cells": [
-                  "Fable"
-                ]
-              },
-              {
-                "cells": [
-                  "Fairy Tale"
-                ]
-              },
-              {
-                "cells": [
-                  "Fan-Fiction"
-                ]
-              },
-              {
-                "cells": [
-                  "Fantasy"
-                ]
-              },
-              {
-                "cells": [
-                  "Historical Fiction"
-                ]
-              },
-              {
-                "cells": [
-                  "Horror"
-                ]
-              },
-              {
-                "cells": [
-                  "Science Fiction"
-                ]
-              },
-              {
-                "cells": [
-                  "Biography/Autobiography"
-                ]
-              },
-              {
-                "cells": [
-                  "Humor"
-                ]
-              },
-              {
-                "cells": [
-                  "Romance"
-                ]
-              },
-              {
-                "cells": [
-                  "Short Story"
-                ]
-              },
-              {
-                "cells": [
-                  "Essay"
-                ]
-              },
-              {
-                "cells": [
-                  "Memoir"
-                ]
-              },
-              {
-                "cells": [
-                  "Poetry"
+                  "500"
                 ]
               }
             ],
@@ -208,16 +111,28 @@
         ],
         "tags": [
           {
-            "name": "@lol"
+            "name": "@1"
+          },
+          {
+            "name": "@ww"
           }
         ]
       }
     ],
-    "name": "As a student I should be able to",
-    "description": "  search books with different categories",
-    "id": "as-a-student-i-should-be-able-to",
+    "name": "As a librarian, I should be able to see book records on user page",
+    "description": "",
+    "id": "as-a-librarian--i-should-be-able-to-see-book-records-on-user-page",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/BookCategories.feature",
-    "tags": []
+    "uri": "file:src/test/resources/features/ShowBookRecord.feature",
+    "tags": [
+      {
+        "name": "@1",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
   }
 ]

@@ -55,25 +55,7 @@ public class ShowBookRecord_StepDefinitions {
 
 
 
-
-
-
-
-    @Then("Show records for {string} option see {string} of books")
-    public void showRecordsForOptionSeeOfBooks(String arg0, String arg1) {
-
-        //Assert.assertEquals(usersPage.allRows.size(),arg1);
-        System.out.println(usersPage.allRows.size());
-        BrowserUtils.sleep(3);
-
-
-
-
-
-    }
-
-
-    @And("Show records for {string}")
+    /*@And("Show records for {string}")
     public void showRecordsFor(String arg0) {
         BrowserUtils.sleep(2);
         usersPage.showRecordDropDown.click();
@@ -104,8 +86,19 @@ public class ShowBookRecord_StepDefinitions {
 
     }
 
-    @Then("option see {string} of books")
-    public void optionSeeOfBooks(String arg0) {
-       // Assert.assertTrue(usersPage.allRows.size(),arg0);
+     */
+
+
+
+
+
+
+    @Then("show records should have following options:")
+    public void showRecordsShouldHaveFollowingOptions(List<String> options) {
+        select =new Select(usersPage.showRecordDropDown);
+        List<WebElement> webElements= select.getOptions();
+        List<String> actualText=BrowserUtils.getElementsText(webElements);
+        Assert.assertEquals(options,actualText);
+
     }
 }
