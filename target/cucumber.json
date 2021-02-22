@@ -3,7 +3,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-02-22T23:31:36.698Z",
+        "start_timestamp": "2021-02-22T23:33:58.863Z",
         "line": 5,
         "name": "Verify that the default record is 10",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 7196000000,
+              "duration": 6926000000,
               "status": "passed"
             },
             "line": 6,
@@ -25,7 +25,7 @@
           },
           {
             "result": {
-              "duration": 77000000,
+              "duration": 69000000,
               "status": "passed"
             },
             "line": 7,
@@ -43,7 +43,7 @@
           },
           {
             "result": {
-              "duration": 2114000000,
+              "duration": 2135000000,
               "status": "passed"
             },
             "line": 8,
@@ -61,7 +61,7 @@
           },
           {
             "result": {
-              "duration": 134000000,
+              "duration": 140000000,
               "status": "passed"
             },
             "line": 9,
