@@ -12,8 +12,6 @@ public class LoginPage {
 
         PageFactory.initElements(Driver.getDriver(), this);
 
-
-
     }
 
     @FindBy (id = "inputEmail")

@@ -7,17 +7,13 @@ import org.openqa.selenium.support.PageFactory;
 
 import java.util.List;
 
-public class BookCategoriesPage {
-
-    public BookCategoriesPage() {
-
+public class StudentLandinPage {
+    public StudentLandinPage(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
-    @FindBy(id ="book_categories")
-    public WebElement searchCategoriesBox;
 
-    @FindBy(xpath ="//select[@id=‘book_categories’]//option")
-    public List<WebElement> dropdownCategories;
+    @FindBy(xpath = "//th")
+     public List<WebElement> tableInfo;
 
 
 
