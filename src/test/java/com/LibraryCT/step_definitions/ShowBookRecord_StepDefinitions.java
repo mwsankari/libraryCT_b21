@@ -5,6 +5,7 @@ import com.LibraryCT.pages.MainPage;
 import com.LibraryCT.pages.UsersPage;
 import com.LibraryCT.utilities.BrowserUtils;
 import com.LibraryCT.utilities.Driver;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -97,4 +98,11 @@ public class ShowBookRecord_StepDefinitions {
     }
 
 
+    @And("Show records for {string}")
+    public void showRecordsFor(String arg0) {
+    }
+
+    @Then("option see {string} of books")
+    public void optionSeeOfBooks(String arg0) {
+    }
 }
