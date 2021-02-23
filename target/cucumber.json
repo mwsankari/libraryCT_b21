@@ -1,108 +1,115 @@
 [
   {
-    "line": 2,
+    "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-02-22T23:33:58.863Z",
+        "start_timestamp": "2021-02-23T06:01:47.481Z",
         "line": 5,
-        "name": "Verify that the default record is 10",
+        "name": "user browwing books table column",
         "description": "",
-        "id": "as-a-librarian--i-should-be-able-to-see-book-records-on-user-page;verify-that-the-default-record-is-10",
+        "id": "borrowing-books-feature;user-browwing-books-table-column",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 6926000000,
+              "duration": 4757000000,
               "status": "passed"
             },
             "line": 6,
-            "name": "User logged in as librarian",
+            "name": "the user is on the log in page",
             "match": {
-              "location": "com.LibraryCT.step_definitions.ShowBookRecord_StepDefinitions.user_logged_in_as_librarian()"
+              "location": "com.LibraryCT.step_definitions.Login_StepDefinitions.the_user_is_on_the_log_in_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 69000000,
+              "duration": 90000000,
               "status": "passed"
             },
             "line": 7,
-            "name": "User click on \"Users\" link",
+            "name": "the user inputs student username",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"Users\"",
-                  "offset": 14
-                }
-              ],
-              "location": "com.LibraryCT.step_definitions.ShowBookRecord_StepDefinitions.user_click_on_link(java.lang.String)"
+              "location": "com.LibraryCT.step_definitions.Login_StepDefinitions.theUserInputsStudentUsername()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 2135000000,
+              "duration": 127000000,
               "status": "passed"
             },
             "line": 8,
-            "name": "Show record default value should be 10",
+            "name": "the user inputs student password",
             "match": {
-              "arguments": [
-                {
-                  "val": "10",
-                  "offset": 36
-                }
-              ],
-              "location": "com.LibraryCT.step_definitions.ShowBookRecord_StepDefinitions.show_record_default_value_should_be(java.lang.Integer)"
+              "location": "com.LibraryCT.step_definitions.Login_StepDefinitions.theUserInputsStudentPassword()"
             },
-            "keyword": "And "
+            "keyword": "When "
           },
           {
             "result": {
-              "duration": 140000000,
+              "duration": 6000000,
               "status": "passed"
             },
             "line": 9,
-            "name": "show records should have following options:",
+            "name": "the user is logged in to main page",
             "match": {
-              "location": "com.LibraryCT.step_definitions.ShowBookRecord_StepDefinitions.showRecordsShouldHaveFollowingOptions(java.util.List\u003cjava.lang.String\u003e)"
+              "location": "com.LibraryCT.step_definitions.Login_StepDefinitions.the_user_is_logged_in_to_main_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1067000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the user click on the borrowing books",
+            "match": {
+              "location": "com.LibraryCT.step_definitions.borrowinBooks_stepDefinitions.the_user_click_on_the_borrowing_books()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2140000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the user should see the following table colums",
+            "match": {
+              "location": "com.LibraryCT.step_definitions.borrowinBooks_stepDefinitions.the_user_should_see_the_following_table_colums(java.util.List\u003cjava.lang.String\u003e)"
             },
             "rows": [
               {
                 "cells": [
-                  "5"
+                  "Action"
                 ]
               },
               {
                 "cells": [
-                  "10"
+                  "Book Name"
                 ]
               },
               {
                 "cells": [
-                  "15"
+                  "Borrowed Date"
                 ]
               },
               {
                 "cells": [
-                  "50"
+                  "Planned Return Date"
                 ]
               },
               {
                 "cells": [
-                  "100"
+                  "Return Date"
                 ]
               },
               {
                 "cells": [
-                  "200"
-                ]
-              },
-              {
-                "cells": [
-                  "500"
+                  "Is Returned ?"
                 ]
               }
             ],
@@ -111,28 +118,16 @@
         ],
         "tags": [
           {
-            "name": "@1"
-          },
-          {
-            "name": "@ww"
+            "name": "@BorrowingBooks"
           }
         ]
       }
     ],
-    "name": "As a librarian, I should be able to see book records on user page",
-    "description": "",
-    "id": "as-a-librarian--i-should-be-able-to-see-book-records-on-user-page",
+    "name": "borrowing books feature",
+    "description": "  As a user i should see borrowing books table columns",
+    "id": "borrowing-books-feature",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/ShowBookRecord.feature",
-    "tags": [
-      {
-        "name": "@1",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 1
-        }
-      }
-    ]
+    "uri": "file:src/test/resources/features/borowwingBooks.feature",
+    "tags": []
   }
 ]
