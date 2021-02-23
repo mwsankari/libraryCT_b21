@@ -3,278 +3,105 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-02-22T03:03:10.918Z",
-        "before": [
-          {
-            "result": {
-              "duration": 12000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.LibraryCT.step_definitions.Hooks.setUpScenario()"
-            }
-          }
-        ],
+        "start_timestamp": "2021-02-23T02:12:28.490Z",
         "line": 4,
         "name": "As a librarian user should verify categories",
         "description": "",
-        "id": "user-group-category-features;as-a-librarian-user-should-verify-categories",
-        "after": [
-          {
-            "result": {
-              "duration": 1018000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.LibraryCT.step_definitions.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
+        "id": "user-status-feature;as-a-librarian-user-should-verify-categories",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 6946000000,
+              "duration": 6258000000,
               "status": "passed"
             },
-            "before": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "com.LibraryCT.step_definitions.Hooks.runBeforeSteps()"
-                }
-              }
-            ],
             "line": 5,
             "name": "the user is on the log in page",
             "match": {
               "location": "com.LibraryCT.step_definitions.Login_StepDefinitions.the_user_is_on_the_log_in_page()"
             },
-            "after": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "com.LibraryCT.step_definitions.Hooks.runsAfterSteps()"
-                }
-              }
-            ],
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 238000000,
+              "duration": 194000000,
               "status": "passed"
             },
-            "before": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "com.LibraryCT.step_definitions.Hooks.runBeforeSteps()"
-                }
-              }
-            ],
             "line": 6,
             "name": "the user inputs username",
             "match": {
               "location": "com.LibraryCT.step_definitions.Login_StepDefinitions.the_user_inputs_username()"
             },
-            "after": [
-              {
-                "result": {
-                  "duration": 1000000,
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "com.LibraryCT.step_definitions.Hooks.runsAfterSteps()"
-                }
-              }
-            ],
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 455000000,
+              "duration": 390000000,
               "status": "passed"
             },
-            "before": [
-              {
-                "result": {
-                  "duration": 1000000,
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "com.LibraryCT.step_definitions.Hooks.runBeforeSteps()"
-                }
-              }
-            ],
             "line": 7,
             "name": "the user inputs password",
             "match": {
               "location": "com.LibraryCT.step_definitions.Login_StepDefinitions.the_user_inputs_password()"
             },
-            "after": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "com.LibraryCT.step_definitions.Hooks.runsAfterSteps()"
-                }
-              }
-            ],
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 12000000,
+              "duration": 17000000,
               "status": "passed"
             },
-            "before": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "com.LibraryCT.step_definitions.Hooks.runBeforeSteps()"
-                }
-              }
-            ],
             "line": 8,
             "name": "the user is logged in to main page",
             "match": {
               "location": "com.LibraryCT.step_definitions.Login_StepDefinitions.the_user_is_logged_in_to_main_page()"
             },
-            "after": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "com.LibraryCT.step_definitions.Hooks.runsAfterSteps()"
-                }
-              }
-            ],
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 3201000000,
+              "duration": 3143000000,
               "status": "passed"
             },
-            "before": [
-              {
-                "result": {
-                  "duration": 1000000,
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "com.LibraryCT.step_definitions.Hooks.runBeforeSteps()"
-                }
-              }
-            ],
             "line": 9,
             "name": "the user click user module",
             "match": {
               "location": "com.LibraryCT.step_definitions.GroupCategory_StepDefinition.the_user_click_user_module()"
             },
-            "after": [
-              {
-                "result": {
-                  "duration": 2000000,
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "com.LibraryCT.step_definitions.Hooks.runsAfterSteps()"
-                }
-              }
-            ],
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 3228000000,
+              "duration": 3171000000,
               "status": "passed"
             },
-            "before": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "com.LibraryCT.step_definitions.Hooks.runBeforeSteps()"
-                }
-              }
-            ],
             "line": 10,
-            "name": "the user click User Group dropdown",
+            "name": "the user click Status dropdown",
             "match": {
-              "location": "com.LibraryCT.step_definitions.GroupCategory_StepDefinition.the_user_click_user_group_dropdown()"
+              "location": "com.LibraryCT.step_definitions.UserStatus_StepDefinition.the_user_click_status_dropdown()"
             },
-            "after": [
-              {
-                "result": {
-                  "duration": 3000000,
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "com.LibraryCT.step_definitions.Hooks.runsAfterSteps()"
-                }
-              }
-            ],
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 3334000000,
+              "duration": 3289000000,
               "status": "passed"
             },
-            "before": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "com.LibraryCT.step_definitions.Hooks.runBeforeSteps()"
-                }
-              }
-            ],
             "line": 11,
-            "name": "the user should see the following",
+            "name": "the user should see the following options:",
             "match": {
-              "location": "com.LibraryCT.step_definitions.GroupCategory_StepDefinition.the_user_should_see_the_following(java.util.List\u003cjava.lang.String\u003e)"
+              "location": "com.LibraryCT.step_definitions.UserStatus_StepDefinition.the_user_should_see_the_following_options(java.util.List\u003cjava.lang.String\u003e)"
             },
-            "after": [
-              {
-                "result": {
-                  "duration": 1000000,
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "com.LibraryCT.step_definitions.Hooks.runsAfterSteps()"
-                }
-              }
-            ],
             "rows": [
               {
                 "cells": [
-                  "ALL"
+                  "ACTIVE"
                 ]
               },
               {
                 "cells": [
-                  "Librarian"
-                ]
-              },
-              {
-                "cells": [
-                  "Students"
+                  "INACTIVE"
                 ]
               }
             ],
@@ -283,19 +110,19 @@
         ],
         "tags": [
           {
-            "name": "@wip02"
+            "name": "@wip12"
           }
         ]
       }
     ],
-    "name": "User group category features",
+    "name": "User status feature",
     "description": "",
-    "id": "user-group-category-features",
+    "id": "user-status-feature",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/GroupCategory.feature",
+    "uri": "file:src/test/resources/features/UserStatus.feature",
     "tags": [
       {
-        "name": "@wip02",
+        "name": "@wip12",
         "type": "Tag",
         "location": {
           "line": 1,
