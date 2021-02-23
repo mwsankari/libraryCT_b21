@@ -3,7 +3,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-02-23T02:12:28.490Z",
+        "start_timestamp": "2021-02-23T15:04:27.518Z",
         "line": 4,
         "name": "As a librarian user should verify categories",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 6258000000,
+              "duration": 6017000000,
               "status": "passed"
             },
             "line": 5,
@@ -25,7 +25,7 @@
           },
           {
             "result": {
-              "duration": 194000000,
+              "duration": 204000000,
               "status": "passed"
             },
             "line": 6,
@@ -37,7 +37,7 @@
           },
           {
             "result": {
-              "duration": 390000000,
+              "duration": 328000000,
               "status": "passed"
             },
             "line": 7,
@@ -49,7 +49,7 @@
           },
           {
             "result": {
-              "duration": 17000000,
+              "duration": 11000000,
               "status": "passed"
             },
             "line": 8,
@@ -61,7 +61,7 @@
           },
           {
             "result": {
-              "duration": 3143000000,
+              "duration": 3161000000,
               "status": "passed"
             },
             "line": 9,
@@ -73,7 +73,7 @@
           },
           {
             "result": {
-              "duration": 3171000000,
+              "duration": 3117000000,
               "status": "passed"
             },
             "line": 10,
@@ -85,7 +85,7 @@
           },
           {
             "result": {
-              "duration": 3289000000,
+              "duration": 3191000000,
               "status": "passed"
             },
             "line": 11,
