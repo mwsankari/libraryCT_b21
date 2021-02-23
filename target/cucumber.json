@@ -1,240 +1,109 @@
 [
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
+        "start_timestamp": "2021-02-22T23:33:58.863Z",
         "line": 5,
-        "name": "user should be login with valid username and password",
+        "name": "Verify that the default record is 10",
         "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 6732000000,
-              "status": "passed"
-            },
-            "before": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "com.LibraryCT.step_definitions.Hooks.runBeforeSteps()"
-                }
-              }
-            ],
-            "line": 6,
-            "name": "user is on the login page",
-            "match": {
-              "location": "com.LibraryCT.step_definitions.AddUsers_Stepdefinition.user_is_on_the_login_page()"
-            },
-            "after": [
-              {
-                "result": {
-                  "duration": 1000000,
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "com.LibraryCT.step_definitions.Hooks.runsAfterSteps()"
-                }
-              }
-            ],
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 50000000,
-              "status": "passed"
-            },
-            "before": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "com.LibraryCT.step_definitions.Hooks.runBeforeSteps()"
-                }
-              }
-            ],
-            "line": 7,
-            "name": "libarian should able to see main page",
-            "match": {
-              "location": "com.LibraryCT.step_definitions.AddUsers_Stepdefinition.libarian_should_able_to_see_main_page()"
-            },
-            "after": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "com.LibraryCT.step_definitions.Hooks.runsAfterSteps()"
-                }
-              }
-            ],
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-02-21T23:03:48.892Z",
-        "before": [
-          {
-            "result": {
-              "duration": 7000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.LibraryCT.step_definitions.Hooks.setUpScenario()"
-            }
-          }
-        ],
-        "line": 17,
-        "name": "librarian should able click close button on the add users page",
-        "description": "",
-        "id": "library-should-be-able-to-add-a-new-user--and-edit-user-information;librarian-should-able-click-close-button-on-the-add-users-page",
-        "after": [
-          {
-            "result": {
-              "duration": 1004000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.LibraryCT.step_definitions.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
+        "id": "as-a-librarian--i-should-be-able-to-see-book-records-on-user-page;verify-that-the-default-record-is-10",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 1071000000,
+              "duration": 6926000000,
               "status": "passed"
             },
-            "before": [
-              {
-                "result": {
-                  "duration": 1000000,
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "com.LibraryCT.step_definitions.Hooks.runBeforeSteps()"
-                }
-              }
-            ],
-            "line": 18,
-            "name": "liabarian should able to click user module",
+            "line": 6,
+            "name": "User logged in as librarian",
             "match": {
-              "location": "com.LibraryCT.step_definitions.AddUsers_Stepdefinition.liabarian_should_able_to_click_user_module()"
+              "location": "com.LibraryCT.step_definitions.ShowBookRecord_StepDefinitions.user_logged_in_as_librarian()"
             },
-            "after": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "com.LibraryCT.step_definitions.Hooks.runsAfterSteps()"
-                }
-              }
-            ],
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 1065000000,
+              "duration": 69000000,
               "status": "passed"
             },
-            "before": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "com.LibraryCT.step_definitions.Hooks.runBeforeSteps()"
-                }
-              }
-            ],
-            "line": 19,
-            "name": "librarian click need to on the add user button",
+            "line": 7,
+            "name": "User click on \"Users\" link",
             "match": {
-              "location": "com.LibraryCT.step_definitions.AddUsers_Stepdefinition.librarian_click_need_to_on_the_add_user_button()"
-            },
-            "after": [
-              {
-                "result": {
-                  "duration": 1000000,
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "com.LibraryCT.step_definitions.Hooks.runsAfterSteps()"
+              "arguments": [
+                {
+                  "val": "\"Users\"",
+                  "offset": 14
                 }
-              }
-            ],
+              ],
+              "location": "com.LibraryCT.step_definitions.ShowBookRecord_StepDefinitions.user_click_on_link(java.lang.String)"
+            },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 1051000000,
+              "duration": 2135000000,
               "status": "passed"
             },
-            "before": [
-              {
-                "result": {
-                  "duration": 1000000,
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "com.LibraryCT.step_definitions.Hooks.runBeforeSteps()"
-                }
-              }
-            ],
-            "line": 20,
-            "name": "liabraian should able to click close button",
+            "line": 8,
+            "name": "Show record default value should be 10",
             "match": {
-              "location": "com.LibraryCT.step_definitions.AddUsers_Stepdefinition.liabraian_should_able_to_click_close_button()"
-            },
-            "after": [
-              {
-                "result": {
-                  "duration": 2000000,
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "com.LibraryCT.step_definitions.Hooks.runsAfterSteps()"
+              "arguments": [
+                {
+                  "val": "10",
+                  "offset": 36
                 }
-              }
-            ],
+              ],
+              "location": "com.LibraryCT.step_definitions.ShowBookRecord_StepDefinitions.show_record_default_value_should_be(java.lang.Integer)"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 1010000000,
+              "duration": 140000000,
               "status": "passed"
             },
-            "before": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "com.LibraryCT.step_definitions.Hooks.runBeforeSteps()"
-                }
-              }
-            ],
-            "line": 21,
-            "name": "librarian should see user page",
+            "line": 9,
+            "name": "show records should have following options:",
             "match": {
-              "location": "com.LibraryCT.step_definitions.AddUsers_Stepdefinition.librarian_should_see_user_page()"
+              "location": "com.LibraryCT.step_definitions.ShowBookRecord_StepDefinitions.showRecordsShouldHaveFollowingOptions(java.util.List\u003cjava.lang.String\u003e)"
             },
-            "after": [
+            "rows": [
               {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "com.LibraryCT.step_definitions.Hooks.runsAfterSteps()"
-                }
+                "cells": [
+                  "5"
+                ]
+              },
+              {
+                "cells": [
+                  "10"
+                ]
+              },
+              {
+                "cells": [
+                  "15"
+                ]
+              },
+              {
+                "cells": [
+                  "50"
+                ]
+              },
+              {
+                "cells": [
+                  "100"
+                ]
+              },
+              {
+                "cells": [
+                  "200"
+                ]
+              },
+              {
+                "cells": [
+                  "500"
+                ]
               }
             ],
             "keyword": "Then "
@@ -242,16 +111,28 @@
         ],
         "tags": [
           {
-            "name": "@cancel_user"
+            "name": "@1"
+          },
+          {
+            "name": "@ww"
           }
         ]
       }
     ],
-    "name": "library should be able to add a new user, and edit user information",
-    "description": "  agile story : as a librarian i should be able to add a user and edit users information, from users page\n  acounts are :only librarian",
-    "id": "library-should-be-able-to-add-a-new-user--and-edit-user-information",
+    "name": "As a librarian, I should be able to see book records on user page",
+    "description": "",
+    "id": "as-a-librarian--i-should-be-able-to-see-book-records-on-user-page",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/AddUser.feature",
-    "tags": []
+    "uri": "file:src/test/resources/features/ShowBookRecord.feature",
+    "tags": [
+      {
+        "name": "@1",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
   }
 ]
