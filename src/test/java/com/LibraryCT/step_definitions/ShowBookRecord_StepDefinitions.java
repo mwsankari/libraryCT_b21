@@ -5,6 +5,7 @@ import com.LibraryCT.pages.MainPage;
 import com.LibraryCT.pages.UsersPage;
 import com.LibraryCT.utilities.BrowserUtils;
 import com.LibraryCT.utilities.Driver;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -54,12 +55,8 @@ public class ShowBookRecord_StepDefinitions {
 
 
 
-
-
-
-
-    @Then("Show records for {string} option see {string} of books")
-    public void showRecordsForOptionSeeOfBooks(String arg0, String arg1) {
+    /*@And("Show records for {string}")
+    public void showRecordsFor(String arg0) {
         BrowserUtils.sleep(2);
         usersPage.showRecordDropDown.click();
         switch (arg0){
@@ -86,15 +83,22 @@ public class ShowBookRecord_StepDefinitions {
                 break;
 
         }
-        //Assert.assertEquals(usersPage.allRows.size(),arg1);
-        System.out.println(usersPage.allRows.size());
-        BrowserUtils.sleep(3);
-
-
-
-
 
     }
 
+     */
 
+
+
+
+
+
+    @Then("show records should have following options:")
+    public void showRecordsShouldHaveFollowingOptions(List<String> options) {
+        select =new Select(usersPage.showRecordDropDown);
+        List<WebElement> webElements= select.getOptions();
+        List<String> actualText=BrowserUtils.getElementsText(webElements);
+        Assert.assertEquals(options,actualText);
+
+    }
 }
