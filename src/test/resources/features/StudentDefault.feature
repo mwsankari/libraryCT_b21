@@ -1,5 +1,5 @@
 
-Feature: usesr should be able to see default info
+Feature: user should be able to see default info
   As a student, I should be able to see tables with default info
 
   Scenario: As a student, I should be able to log in with username and password

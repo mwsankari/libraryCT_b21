@@ -1,133 +1,193 @@
 [
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-02-23T06:01:47.481Z",
-        "line": 5,
-        "name": "user browwing books table column",
+        "start_timestamp": "2021-02-22T02:14:15.040Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.LibraryCT.step_definitions.Hooks.setUpScenario()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "user as logout successfully",
         "description": "",
-        "id": "borrowing-books-feature;user-browwing-books-table-column",
+        "id": "library-app-logout-feature;user-as-logout-successfully",
+        "after": [
+          {
+            "result": {
+              "duration": 1006000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.LibraryCT.step_definitions.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 4757000000,
+              "duration": 5519000000,
               "status": "passed"
             },
-            "line": 6,
-            "name": "the user is on the log in page",
+            "before": [
+              {
+                "result": {
+                  "duration": 2000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.LibraryCT.step_definitions.Hooks.runBeforeSteps()"
+                }
+              }
+            ],
+            "line": 5,
+            "name": "user should login successfully",
             "match": {
-              "location": "com.LibraryCT.step_definitions.Login_StepDefinitions.the_user_is_on_the_log_in_page()"
+              "location": "com.LibraryCT.step_definitions.Logout_StepDefinitions.user_should_login_successfully()"
             },
+            "after": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.LibraryCT.step_definitions.Hooks.runsAfterSteps()"
+                }
+              }
+            ],
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 90000000,
+              "duration": 1251000000,
               "status": "passed"
             },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.LibraryCT.step_definitions.Hooks.runBeforeSteps()"
+                }
+              }
+            ],
+            "line": 6,
+            "name": "user should see main page",
+            "match": {
+              "location": "com.LibraryCT.step_definitions.Logout_StepDefinitions.user_should_see_main_page()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.LibraryCT.step_definitions.Hooks.runsAfterSteps()"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2477000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.LibraryCT.step_definitions.Hooks.runBeforeSteps()"
+                }
+              }
+            ],
             "line": 7,
-            "name": "the user inputs student username",
+            "name": "user logs out from application",
             "match": {
-              "location": "com.LibraryCT.step_definitions.Login_StepDefinitions.theUserInputsStudentUsername()"
+              "location": "com.LibraryCT.step_definitions.Logout_StepDefinitions.user_logs_out_from_application()"
             },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 127000000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "the user inputs student password",
-            "match": {
-              "location": "com.LibraryCT.step_definitions.Login_StepDefinitions.theUserInputsStudentPassword()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 6000000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "the user is logged in to main page",
-            "match": {
-              "location": "com.LibraryCT.step_definitions.Login_StepDefinitions.the_user_is_logged_in_to_main_page()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1067000000,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "the user click on the borrowing books",
-            "match": {
-              "location": "com.LibraryCT.step_definitions.borrowinBooks_stepDefinitions.the_user_click_on_the_borrowing_books()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 2140000000,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "the user should see the following table colums",
-            "match": {
-              "location": "com.LibraryCT.step_definitions.borrowinBooks_stepDefinitions.the_user_should_see_the_following_table_colums(java.util.List\u003cjava.lang.String\u003e)"
-            },
-            "rows": [
+            "after": [
               {
-                "cells": [
-                  "Action"
-                ]
-              },
-              {
-                "cells": [
-                  "Book Name"
-                ]
-              },
-              {
-                "cells": [
-                  "Borrowed Date"
-                ]
-              },
-              {
-                "cells": [
-                  "Planned Return Date"
-                ]
-              },
-              {
-                "cells": [
-                  "Return Date"
-                ]
-              },
-              {
-                "cells": [
-                  "Is Returned ?"
-                ]
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.LibraryCT.step_definitions.Hooks.runsAfterSteps()"
+                }
               }
             ],
             "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3155000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.LibraryCT.step_definitions.Hooks.runBeforeSteps()"
+                }
+              }
+            ],
+            "line": 8,
+            "name": "user should see login page",
+            "match": {
+              "location": "com.LibraryCT.step_definitions.Logout_StepDefinitions.user_should_see_login_page()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.LibraryCT.step_definitions.Hooks.runsAfterSteps()"
+                }
+              }
+            ],
+            "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@BorrowingBooks"
+            "name": "@logout"
           }
         ]
       }
     ],
-    "name": "borrowing books feature",
-    "description": "  As a user i should see borrowing books table columns",
-    "id": "borrowing-books-feature",
+    "name": "Library app logout feature",
+    "description": "",
+    "id": "library-app-logout-feature",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/borowwingBooks.feature",
-    "tags": []
+    "uri": "file:src/test/resources/features/Logout.feature",
+    "tags": [
+      {
+        "name": "@logout",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
   }
 ]
