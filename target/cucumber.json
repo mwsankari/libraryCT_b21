@@ -1,22 +1,22 @@
 [
   {
-    "line": 2,
+    "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-02-23T15:04:27.518Z",
-        "line": 4,
-        "name": "As a librarian user should verify categories",
+        "start_timestamp": "2021-02-23T06:01:47.481Z",
+        "line": 5,
+        "name": "user browwing books table column",
         "description": "",
-        "id": "user-status-feature;as-a-librarian-user-should-verify-categories",
+        "id": "borrowing-books-feature;user-browwing-books-table-column",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 6017000000,
+              "duration": 4757000000,
               "status": "passed"
             },
-            "line": 5,
+            "line": 6,
             "name": "the user is on the log in page",
             "match": {
               "location": "com.LibraryCT.step_definitions.Login_StepDefinitions.the_user_is_on_the_log_in_page()"
@@ -25,83 +25,91 @@
           },
           {
             "result": {
-              "duration": 204000000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "the user inputs username",
-            "match": {
-              "location": "com.LibraryCT.step_definitions.Login_StepDefinitions.the_user_inputs_username()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 328000000,
+              "duration": 90000000,
               "status": "passed"
             },
             "line": 7,
-            "name": "the user inputs password",
+            "name": "the user inputs student username",
             "match": {
-              "location": "com.LibraryCT.step_definitions.Login_StepDefinitions.the_user_inputs_password()"
+              "location": "com.LibraryCT.step_definitions.Login_StepDefinitions.theUserInputsStudentUsername()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 11000000,
+              "duration": 127000000,
               "status": "passed"
             },
             "line": 8,
+            "name": "the user inputs student password",
+            "match": {
+              "location": "com.LibraryCT.step_definitions.Login_StepDefinitions.theUserInputsStudentPassword()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6000000,
+              "status": "passed"
+            },
+            "line": 9,
             "name": "the user is logged in to main page",
             "match": {
               "location": "com.LibraryCT.step_definitions.Login_StepDefinitions.the_user_is_logged_in_to_main_page()"
             },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1067000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the user click on the borrowing books",
+            "match": {
+              "location": "com.LibraryCT.step_definitions.borrowinBooks_stepDefinitions.the_user_click_on_the_borrowing_books()"
+            },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 3161000000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "the user click user module",
-            "match": {
-              "location": "com.LibraryCT.step_definitions.GroupCategory_StepDefinition.the_user_click_user_module()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3117000000,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "the user click Status dropdown",
-            "match": {
-              "location": "com.LibraryCT.step_definitions.UserStatus_StepDefinition.the_user_click_status_dropdown()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3191000000,
+              "duration": 2140000000,
               "status": "passed"
             },
             "line": 11,
-            "name": "the user should see the following options:",
+            "name": "the user should see the following table colums",
             "match": {
-              "location": "com.LibraryCT.step_definitions.UserStatus_StepDefinition.the_user_should_see_the_following_options(java.util.List\u003cjava.lang.String\u003e)"
+              "location": "com.LibraryCT.step_definitions.borrowinBooks_stepDefinitions.the_user_should_see_the_following_table_colums(java.util.List\u003cjava.lang.String\u003e)"
             },
             "rows": [
               {
                 "cells": [
-                  "ACTIVE"
+                  "Action"
                 ]
               },
               {
                 "cells": [
-                  "INACTIVE"
+                  "Book Name"
+                ]
+              },
+              {
+                "cells": [
+                  "Borrowed Date"
+                ]
+              },
+              {
+                "cells": [
+                  "Planned Return Date"
+                ]
+              },
+              {
+                "cells": [
+                  "Return Date"
+                ]
+              },
+              {
+                "cells": [
+                  "Is Returned ?"
                 ]
               }
             ],
@@ -110,25 +118,16 @@
         ],
         "tags": [
           {
-            "name": "@wip12"
+            "name": "@BorrowingBooks"
           }
         ]
       }
     ],
-    "name": "User status feature",
-    "description": "",
-    "id": "user-status-feature",
+    "name": "borrowing books feature",
+    "description": "  As a user i should see borrowing books table columns",
+    "id": "borrowing-books-feature",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/UserStatus.feature",
-    "tags": [
-      {
-        "name": "@wip12",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 1
-        }
-      }
-    ]
+    "uri": "file:src/test/resources/features/borowwingBooks.feature",
+    "tags": []
   }
 ]
