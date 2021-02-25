@@ -3,20 +3,20 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-02-23T06:01:47.481Z",
-        "line": 5,
-        "name": "user browwing books table column",
+        "start_timestamp": "2021-02-25T01:41:49.626Z",
+        "line": 7,
+        "name": "As a librarian, I should be able to see main module after login",
         "description": "",
-        "id": "borrowing-books-feature;user-browwing-books-table-column",
+        "id": "the-user-should-able-to-see-main-module-when-logged-in;as-a-librarian--i-should-be-able-to-see-main-module-after-login",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 4757000000,
+              "duration": 3148000000,
               "status": "passed"
             },
-            "line": 6,
+            "line": 8,
             "name": "the user is on the log in page",
             "match": {
               "location": "com.LibraryCT.step_definitions.Login_StepDefinitions.the_user_is_on_the_log_in_page()"
@@ -25,91 +25,64 @@
           },
           {
             "result": {
-              "duration": 90000000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "the user inputs student username",
-            "match": {
-              "location": "com.LibraryCT.step_definitions.Login_StepDefinitions.theUserInputsStudentUsername()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 127000000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "the user inputs student password",
-            "match": {
-              "location": "com.LibraryCT.step_definitions.Login_StepDefinitions.theUserInputsStudentPassword()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 6000000,
+              "duration": 102000000,
               "status": "passed"
             },
             "line": 9,
+            "name": "the user inputs username",
+            "match": {
+              "location": "com.LibraryCT.step_definitions.Login_StepDefinitions.the_user_inputs_username()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 161000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the user inputs password",
+            "match": {
+              "location": "com.LibraryCT.step_definitions.Login_StepDefinitions.the_user_inputs_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5000000,
+              "status": "passed"
+            },
+            "line": 11,
             "name": "the user is logged in to main page",
             "match": {
               "location": "com.LibraryCT.step_definitions.Login_StepDefinitions.the_user_is_logged_in_to_main_page()"
             },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1067000000,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "the user click on the borrowing books",
-            "match": {
-              "location": "com.LibraryCT.step_definitions.borrowinBooks_stepDefinitions.the_user_click_on_the_borrowing_books()"
-            },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 2140000000,
+              "duration": 6085000000,
               "status": "passed"
             },
-            "line": 11,
-            "name": "the user should see the following table colums",
+            "line": 12,
+            "name": "user should see the main module below",
             "match": {
-              "location": "com.LibraryCT.step_definitions.borrowinBooks_stepDefinitions.the_user_should_see_the_following_table_colums(java.util.List\u003cjava.lang.String\u003e)"
+              "location": "com.LibraryCT.step_definitions.mainModule.user_should_see_the_main_module_below(java.util.List\u003cjava.lang.String\u003e)"
             },
             "rows": [
               {
                 "cells": [
-                  "Action"
+                  "Dashboard"
                 ]
               },
               {
                 "cells": [
-                  "Book Name"
+                  "Users"
                 ]
               },
               {
                 "cells": [
-                  "Borrowed Date"
-                ]
-              },
-              {
-                "cells": [
-                  "Planned Return Date"
-                ]
-              },
-              {
-                "cells": [
-                  "Return Date"
-                ]
-              },
-              {
-                "cells": [
-                  "Is Returned ?"
+                  "Books"
                 ]
               }
             ],
@@ -118,16 +91,16 @@
         ],
         "tags": [
           {
-            "name": "@BorrowingBooks"
+            "name": "@librarian123"
           }
         ]
       }
     ],
-    "name": "borrowing books feature",
-    "description": "  As a user i should see borrowing books table columns",
-    "id": "borrowing-books-feature",
+    "name": "the user should able to see main module when logged in",
+    "description": "  As a user ,I should be able to see the main module when logged in",
+    "id": "the-user-should-able-to-see-main-module-when-logged-in",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/borowwingBooks.feature",
+    "uri": "file:src/test/resources/features/mainMadole.feature",
     "tags": []
   }
 ]
