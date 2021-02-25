@@ -1,22 +1,22 @@
 [
   {
-    "line": 2,
+    "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-02-23T15:04:27.518Z",
-        "line": 4,
-        "name": "As a librarian user should verify categories",
+        "start_timestamp": "2021-02-25T01:41:49.626Z",
+        "line": 7,
+        "name": "As a librarian, I should be able to see main module after login",
         "description": "",
-        "id": "user-status-feature;as-a-librarian-user-should-verify-categories",
+        "id": "the-user-should-able-to-see-main-module-when-logged-in;as-a-librarian--i-should-be-able-to-see-main-module-after-login",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 6017000000,
+              "duration": 3148000000,
               "status": "passed"
             },
-            "line": 5,
+            "line": 8,
             "name": "the user is on the log in page",
             "match": {
               "location": "com.LibraryCT.step_definitions.Login_StepDefinitions.the_user_is_on_the_log_in_page()"
@@ -25,10 +25,10 @@
           },
           {
             "result": {
-              "duration": 204000000,
+              "duration": 102000000,
               "status": "passed"
             },
-            "line": 6,
+            "line": 9,
             "name": "the user inputs username",
             "match": {
               "location": "com.LibraryCT.step_definitions.Login_StepDefinitions.the_user_inputs_username()"
@@ -37,10 +37,10 @@
           },
           {
             "result": {
-              "duration": 328000000,
+              "duration": 161000000,
               "status": "passed"
             },
-            "line": 7,
+            "line": 10,
             "name": "the user inputs password",
             "match": {
               "location": "com.LibraryCT.step_definitions.Login_StepDefinitions.the_user_inputs_password()"
@@ -49,10 +49,10 @@
           },
           {
             "result": {
-              "duration": 11000000,
+              "duration": 5000000,
               "status": "passed"
             },
-            "line": 8,
+            "line": 11,
             "name": "the user is logged in to main page",
             "match": {
               "location": "com.LibraryCT.step_definitions.Login_StepDefinitions.the_user_is_logged_in_to_main_page()"
@@ -61,47 +61,28 @@
           },
           {
             "result": {
-              "duration": 3161000000,
+              "duration": 6085000000,
               "status": "passed"
             },
-            "line": 9,
-            "name": "the user click user module",
+            "line": 12,
+            "name": "user should see the main module below",
             "match": {
-              "location": "com.LibraryCT.step_definitions.GroupCategory_StepDefinition.the_user_click_user_module()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3117000000,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "the user click Status dropdown",
-            "match": {
-              "location": "com.LibraryCT.step_definitions.UserStatus_StepDefinition.the_user_click_status_dropdown()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3191000000,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "the user should see the following options:",
-            "match": {
-              "location": "com.LibraryCT.step_definitions.UserStatus_StepDefinition.the_user_should_see_the_following_options(java.util.List\u003cjava.lang.String\u003e)"
+              "location": "com.LibraryCT.step_definitions.mainModule.user_should_see_the_main_module_below(java.util.List\u003cjava.lang.String\u003e)"
             },
             "rows": [
               {
                 "cells": [
-                  "ACTIVE"
+                  "Dashboard"
                 ]
               },
               {
                 "cells": [
-                  "INACTIVE"
+                  "Users"
+                ]
+              },
+              {
+                "cells": [
+                  "Books"
                 ]
               }
             ],
@@ -110,25 +91,16 @@
         ],
         "tags": [
           {
-            "name": "@wip12"
+            "name": "@librarian123"
           }
         ]
       }
     ],
-    "name": "User status feature",
-    "description": "",
-    "id": "user-status-feature",
+    "name": "the user should able to see main module when logged in",
+    "description": "  As a user ,I should be able to see the main module when logged in",
+    "id": "the-user-should-able-to-see-main-module-when-logged-in",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/UserStatus.feature",
-    "tags": [
-      {
-        "name": "@wip12",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 1
-        }
-      }
-    ]
+    "uri": "file:src/test/resources/features/mainMadole.feature",
+    "tags": []
   }
 ]
