@@ -1,5 +1,6 @@
 package com.LibraryCT.pages;
 
+import com.LibraryCT.utilities.BrowserUtils;
 import com.LibraryCT.utilities.ConfigurationReader;
 import com.LibraryCT.utilities.Driver;
 import org.openqa.selenium.WebElement;
@@ -25,6 +26,7 @@ public class LoginPage {
 
     public void loginToLibraryApp_Librarian(){
         Driver.getDriver().get(ConfigurationReader.getProperty("url"));
+        BrowserUtils.sleep(2);
         usernameBox.sendKeys(ConfigurationReader.getProperty("usernameL20"));
         passwordBox.sendKeys(ConfigurationReader.getProperty("passwordL20"));
         loginButton.click();

@@ -1,3 +1,4 @@
+@1
 Feature: library should be able to add a new user, and edit user information
   agile story : as a librarian i should be able to add a user and edit users information, from users page
   acounts are :only librarian
